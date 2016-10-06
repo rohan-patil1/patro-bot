@@ -1,0 +1,29 @@
+{
+  "name": "test-bot",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Initial bot development",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-patil1/test-bot.git"
+  },
+  "keywords": [
+    "recastai",
+    "nodejs",
+    "bot"
+  ],
+  "author": "Rohan Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-patil1/test-bot/issues"
+  },
+  "homepage": "https://github.com/rohan-patil1/test-bot#readme",
+  "dependencies": {
+    "botbuilder": "^3.2.3",
+    "recastai": "^2.1.0",
+    "restify": "^4.1.1"
+  }
+}
