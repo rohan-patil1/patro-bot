@@ -1,14 +1,15 @@
 {
-  "name": "test-bot",
+  "name": "patro-bot",
   "version": "1.0.0-SNAPSHOT",
   "description": "Initial bot development",
   "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rohan-patil1/test-bot.git"
+    "url": "git+https://github.com/rohan-patil1/patro-bot.git"
   },
   "keywords": [
     "recastai",
@@ -18,9 +19,9 @@
   "author": "Rohan Patil",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rohan-patil1/test-bot/issues"
+    "url": "https://github.com/rohan-patil1/patro-bot/issues"
   },
-  "homepage": "https://github.com/rohan-patil1/test-bot#readme",
+  "homepage": "https://github.com/rohan-patil1/patro-bot#readme",
   "dependencies": {
     "botbuilder": "^3.2.3",
     "recastai": "^2.1.0",
