@@ -1,7 +1,7 @@
 const restify = require("restify");
 const builder = require("botbuilder");
 const recast = require("recastai");
-const greetings = require('./intents/greetings.js');
+const greetings = require("./intents/greetings.js");
 
 // Connection to Microsoft Bot Framework
 const connector = new builder.ChatConnector({
@@ -19,11 +19,11 @@ bot.dialog("/", (session) => {
   console.log(session.message.text);
   recastClient.textRequest(session.message.text)
   .then((res) => {
-    console.log(res);
-    const intent = res.intent();
-    console.log("Intent: "+intent);
+    console.log(JSON.stringify(res));
+    const intent = res.intent;
+    console.log("Intent: "+JSON.stringify(intent));
     switch (intent) {
-      case 'greetings':
+      case "greetings":
         session.send(greetings());
         break;
       default:
