@@ -20,9 +20,9 @@ bot.dialog("/", (session) => {
   recastClient.textRequest(session.message.text)
   .then((res) => {
     console.log(JSON.stringify(res));
-    const intent = res.intent;
+    const intent = res.intent();
     console.log("Intent: "+JSON.stringify(intent));
-    switch (intent) {
+    switch (intent.slug) {
       case "greetings":
         session.send(greetings());
         break;
