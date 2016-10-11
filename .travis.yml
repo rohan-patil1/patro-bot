@@ -1,4 +1,10 @@
 language: node_js
 node_js:
-  - "6"
-  - "node"
+- '6'
+deploy:
+  provider: heroku
+  api_key:
+    secure: VPVqyIcPRb43m50m+hEoLpgkXP7mmxIMKFAYS+F0JjTCtaJRsZnZF4/ilNGly2tSkV+OPRFQRG+p0pdcGfI8WyusNPK3nlSHWQ+2DHzMZGaIGBu8q3fCz6J1+iisQZvdhjxCuHhetHl2seJ3/QWFo7qDjRkGBdIMbqyHesqM7ip3TFAvOaIbPxlol6Ot2sloaXeb62ygalAyRDdOIzLcelnVh6wrD8pUYOsXr67KX88ytaGaCYPdXNakm/OHKnOVDze+pNbFpV07v2KITo1WfiT5Jt9Hij6skPYmRcL6i9BlidxcPDrLe3eVZSAjEFU6MCmlfsQ6U4XwU+X5SJsdOb74X/pNzBTicYrIplb8KDm/XSZddVu+QGtsAux+ZdDo8l/eoD4o+KPBq1TYqYD7T58p1M9vSnd7DpjxNySWwD8sEKPzGTdr+s2HqNcYnDWPpsviEnaDvKaol57S9O3sTiLTZcb2Je1Kdg8nHQu6BYAiB1nPQcpbJhtIrCouHuNAIRL5W+5MZF2NoVeOvifhsF9+ogwLK5GueMkoKbTDKIVKHc5/IwTfpKHC5sXxGkPHayfgLs+ERraJuZ9uteeqUjL59O/ABtV/25tzvw6sP+3RP1HKiNvsXeqqhlm0wp9mryVhbU+1GgFB7B3m+F7bTCne4zTGOrH7V/6TdAmEcpI=
+  app: patro-bot
+  on:
+    repo: rohan-patil1/patro-bot

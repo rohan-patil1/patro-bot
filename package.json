@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
     "botbuilder": "^3.2.3",
     "recastai": "^2.1.0",
     "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.0",
+    "chai": "^3.5.0"
   }
 }
